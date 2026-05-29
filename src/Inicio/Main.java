@@ -19,8 +19,17 @@ System.out.println("Ingrese el titulo del libro:");
 titulo = sc.nextLine();
 System.out.println("Ingrese el autor del libro:");
 autor = sc.nextLine();
+
+try {
 System.out.println("Ingrese el año de publicación del libro:");
 anio = Integer.parseInt(sc.nextLine());
+}
+catch (NumberFormatException e) {
+	System.out.println("Debe ingresar un numero ");
+	sc.close();
+	return;
+}
+
 System.out.println("Ingrese cantidad de copias: ");
 copias = Integer.parseInt(sc.nextLine());
 
@@ -39,7 +48,7 @@ else{
 	System.out.println("LIBRO REGISTRADO CON EXITO ");
 	System.out.println("Titulo: " + titulo);
 	System.out.println("Autor: " + autor);
-	System.out.println("Año de publicacion :" + anio);
+	System.out.println("Año de publicacion: " + anio);
 	System.out.println("Copias disponibles: " + copias);
 	
  }
