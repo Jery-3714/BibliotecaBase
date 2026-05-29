@@ -1,0 +1,21 @@
+{
+  "name": "bibliotecabase",
+  "version": "1.0.0",
+  "description": "Base project for a simple library catalog and loan flow.",
+  "main": "src/library.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jery-3714/BibliotecaBase.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Jery-3714/BibliotecaBase/issues"
+  },
+  "homepage": "https://github.com/Jery-3714/BibliotecaBase#readme"
+}
