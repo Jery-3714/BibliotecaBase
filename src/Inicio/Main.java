@@ -9,23 +9,47 @@ public class Main {
 		
 System.out.println("===== BIBLIOTECA BASE =====");
 
-int contador = 1;
-int numero;
+String titulo;
+String autor;
+int anio;
+int copias;
 
-System.out.println("Ingrese un numero: ");
-numero = Integer.parseInt(sc.nextLine());
 
-while(contador <= numero) {
-System.out.println(contador);
-contador++;
+System.out.println("Ingrese el titulo del libro:");
+titulo = sc.nextLine();
+System.out.println("Ingrese el autor del libro:");
+autor = sc.nextLine();
+System.out.println("Ingrese el año de publicación del libro:");
+anio = Integer.parseInt(sc.nextLine());
+System.out.println("Ingrese cantidad de copias: ");
+copias = Integer.parseInt(sc.nextLine());
+
+if(anio < 1500 || anio > 2026) {
+	
+	System.out.println("Año inválido");
+		
 }
-if(numero >= 1 && numero <= 15) {
-System.out.println("Exito");
+
+else if(copias < 0) {
+	System.out.println("Cantidad de copias inválida");
 }
-else {
-System.out.println("Fracaso");
-}
+
+else{
+	 
+	System.out.println("LIBRO REGISTRADO CON EXITO ");
+	System.out.println("Titulo: " + titulo);
+	System.out.println("Autor: " + autor);
+	System.out.println("Año de publicacion :" + anio);
+	System.out.println("Copias disponibles: " + copias);
+	
+ }
+ 
+ 
+ 
 sc.close();
-}
+
+
+	}
 
 }
+
