@@ -11,15 +11,19 @@ System.out.println("===== BIBLIOTECA BASE =====");
 
 String titulo;
 String autor;
+int anio;
 
 System.out.println("Ingrese el titulo del libro:");
 titulo = sc.nextLine();
 System.out.println("Ingrese el autor del libro:");
 autor = sc.nextLine();
+System.out.println("Ingrese el año de publicación del libro:");
+anio = Integer.parseInt(sc.nextLine());
 
 System.out.println("Libro registrado:");
-System.out.println("Titulo:" + titulo);
-System.out.println("Autor:" + autor);
+System.out.println("Titulo: " + titulo);
+System.out.println("Autor: " + autor);
+System.out.println("Año de publicacion :" + anio);
 sc.close();
 	}
 
