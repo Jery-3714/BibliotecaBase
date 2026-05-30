@@ -6,59 +6,36 @@ public class Main {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		
-System.out.println("===== BIBLIOTECA BASE =====");
+		int opcion;
+							
+			do {
+				System.out.println("===== BIBLIOTECA BASE =====");
+				System.out.println("1. Registrar libro");
+				System.out.println("2. Mostrar libros");
+				System.out.println("3. salir");
+			
+				opcion = Integer.parseInt(sc.nextLine());
+			
+			
+			if(opcion == 1) {
+				System.out.println("Registrando libro...");
+			}
+			else if(opcion == 2) {
+				System.out.println("Mostrando libros...");
+			}
+			else if(opcion == 3) {
+				System.out.println("Saliendo...");
+			}
+			else {
+			System.out.println("Opcion invalida");
+			}
+			
+			} while(opcion != 3); 
+			
+			
+			
+			sc.close();
 
-String titulo;
-String autor;
-int anio;
-int copias;
-
-
-System.out.println("Ingrese el titulo del libro:");
-titulo = sc.nextLine();
-System.out.println("Ingrese el autor del libro:");
-autor = sc.nextLine();
-
-try {
-System.out.println("Ingrese el año de publicación del libro:");
-anio = Integer.parseInt(sc.nextLine());
-}
-catch (NumberFormatException e) {
-	System.out.println("Debe ingresar un numero ");
-	sc.close();
-	return;
-}
-
-System.out.println("Ingrese cantidad de copias: ");
-copias = Integer.parseInt(sc.nextLine());
-
-if(anio < 1500 || anio > 2026) {
+			}
+			}
 	
-	System.out.println("Año inválido");
-		
-}
-
-else if(copias < 0) {
-	System.out.println("Cantidad de copias inválida");
-}
-
-else{
-	 
-	System.out.println("LIBRO REGISTRADO CON EXITO ");
-	System.out.println("Titulo: " + titulo);
-	System.out.println("Autor: " + autor);
-	System.out.println("Año de publicacion: " + anio);
-	System.out.println("Copias disponibles: " + copias);
-	
- }
- 
- 
- 
-sc.close();
-
-
-	}
-
-}
-
